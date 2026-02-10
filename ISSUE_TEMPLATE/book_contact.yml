@@ -1,0 +1,40 @@
+name: 書籍に関するお問い合わせ
+description: 電子書籍の内容に関するコメント・誤りのご指摘
+title: "[Book Inquiry] "
+labels: ["reader-feedback"]
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        これは電子書籍購入者向けの問い合わせフォームです。
+        誤字・誤植のご指摘、内容へのコメント、改善提案を受け付けています。
+        授業・課題・個別の学習相談には対応していません。
+
+  - type: input
+    id: book_version
+    attributes:
+      label: ご購入された書籍・版
+      placeholder: 例：Kindle版（2026年2月）
+    required: false
+
+  - type: input
+    id: location
+    attributes:
+      label: 該当箇所（章・節・位置番号など）
+      placeholder: 例：第2章 2.3
+    required: false
+
+  - type: textarea
+    id: message
+    attributes:
+      label: お問い合わせ内容
+      description: 誤りのご指摘、内容へのコメント、改善提案など
+      placeholder: 自由にご記入ください
+    required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        ※ 投稿内容は公開されます。
+        個人情報の記載はお控えください。
