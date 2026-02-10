@@ -1,0 +1,32 @@
+name: お問い合わせ
+description: Inquiries related to books and content
+title: "[Contact] "
+labels: ["contact"]
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+This form is for inquiries only.
+We will review the content and respond if necessary.
+  - type: input
+    id: name
+    attributes:
+      label: Name (optional)
+      placeholder: e.g. Jane Doe 
+    required: false
+
+  - type: textarea
+    id: message
+    attributes:
+      label: Inquiry details
+      description: Please enter your question, comment, or any other message.
+      placeholder: Type your message here.
+    required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        * This form is publicly visible on GitHub.  
+        * Please avoid including personal information (e.g., email addresses or postal addresses).  
+        * The information submitted will be used only to respond to your inquiry.
